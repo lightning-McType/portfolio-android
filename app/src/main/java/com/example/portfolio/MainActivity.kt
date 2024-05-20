@@ -1,6 +1,7 @@
 package com.example.portfolio
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -68,6 +69,7 @@ fun Portfolio(modifier: Modifier = Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.padding(12.dp)
         ) {
+            Spacer(modifier = Modifier.height(24.dp))
             Image(
                 painter = painterResource(id = R.drawable.cool_dude),
                 contentDescription = "profile img",
@@ -130,8 +132,6 @@ fun Portfolio(modifier: Modifier = Modifier) {
                     }
                 }
             }
-
-
         }
     }
 }
